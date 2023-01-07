@@ -5,12 +5,14 @@
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
+/* Commonly used design */
 .primary-btn {
     padding: 16px 20px;
     background-color: #FF5959;
     border: none;
     border-radius: 5px;
     font-size: 20px;
+    color:#fff;
 }
 .primary-btn a{
     color:#fff;
@@ -25,14 +27,17 @@ section{
     font-weight: 700;
     margin-bottom: 15px;
 }
-body{
-    background-color: #fff;
-   
-}
 .container{
     max-width: 1140px;
     margin: auto;
 }
+
+body{
+    background-color: #fff;
+   
+}
+
+/* header */
 .header{
     background-color: #fff;
     padding-top: 50px; ;
@@ -81,16 +86,15 @@ body{
 .header .container .img{
     margin-right: 55px;
 }
+/* header end */
 
 /* amount section */
-
 .title-p{
     font-size: 18px;
     color:#707070;
     margin: 0 auto 50px;
     text-align: center;
     max-width: 690px;
-    
 }
 .amount{
     display: flex;
@@ -106,6 +110,7 @@ body{
     font-size: 30px;
     color:#707070;
     border-radius: 5px;
+    border: 3px solid transparent;
 
 }
 .amount .amount-item.active{
@@ -113,7 +118,8 @@ body{
     border: 3px solid #FF5959;
 }
 .amount .amount-item:hover{
-    color:#FF5959;
+    color: #FF5959;
+    border: 3px solid #FF5959;
 }
 .other-amount{
     width: 220px;
@@ -128,7 +134,9 @@ body{
 .center-btn{
     text-align: center;
 }
+/* amount section end */
 
+/* plan section */
 .plan-items{
     display: flex;
     justify-content: space-between;
@@ -138,6 +146,12 @@ body{
 .plan-items .item-box{
     width: 360px;
     padding: 55px 23px;
+}
+.plan-items .item-box.active{
+    background: #fff4d6; ;
+}
+.plan-items .item-box:hover{
+    background: #fff4d6; ;
 }
 .plan-items .item-box .icon{
     width: 53px;
@@ -155,3 +169,80 @@ body{
 .plan-items .item-box.active{
     background: #fff4d6; ;
 }
+/* plan section end */
+
+/* contribute section */
+.donate-way{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap:95px;
+    margin-bottom: 130px;
+}
+.donate-way .contents{
+    width: 500px;
+}
+.donate-way .contents h1{
+    font-size: 45px;
+    color: #121212;
+    margin-bottom: 25px;
+}
+.donate-way .contents p{
+    color:#707070;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.donate-way .image{
+    height: 475px;
+    width: 460px;
+}
+.donate-way .image img{
+    height: 100%;
+    width: 100%;
+}
+.donate-way.revers{
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+/* contribute section end */
+
+/* subscribe section */
+.sub-form{
+    width: 810px;
+    margin: auto;
+    text-align: center;
+    background-color:  #FFF4D6;
+    padding: 75px 0;
+}
+.sub-form input[type=email] {
+    width: 300px;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    background-color: #D9D9D9;
+    border-radius: 5px 0 0 5px;
+}
+.sub-form .primary-btn{
+    border-radius: 0 5px 5px 0;
+    margin-left: -5px;
+}
+/* subscribe section end */
+
+/* footer */
+footer{
+    background: #121212;
+    padding: 70px 0;
+    text-align: center;
+}
+footer h1{
+    font-size: 40px;
+    font-family: Lobster;
+    color: #FF5959;
+    margin-bottom: 30px;
+}
+footer p{
+    color:#D9D9D9;
+    font-size: 15px;
+}
+/* footer end */
